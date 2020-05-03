@@ -410,6 +410,7 @@ color: #fdc134;
   display: inline-block;
   background: #fdc134;
   font-weight: bold;
+  font-size: 17px;
 }
 
 #hero .btn-get-started:hover {
@@ -457,6 +458,7 @@ color: #fdc134;
   {
     display: block;
     padding-top: 12px;
+    font-size: 12px;
   }
 
   
@@ -515,34 +517,6 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-.clients {
-  padding: 0;
-}
-
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  height: 120px;
-}
-
-.clients .client-logo img {
-  height: 40px;
-}
-
-.clients .client-logo:hover img {
-  transform: scale(1.2);
-}
-
-.clients img {
-  transition: all 0.4s ease-in-out;
-}
-
 /*--------------------------------------------------------------
 # Info
 --------------------------------------------------------------*/
@@ -557,11 +531,13 @@ section {
 }
 
 .info .content p {
-  margin-bottom: 0;
-  text-align: justify;
   color: #000000;
   font-family:'Times New Roman';
   font-size: 17px;
+  margin-left: 0px;
+  line-height: 24px;
+  text-align: justify;
+  font-weight: bold;
 }
 
 .info .content .icon-box {
@@ -580,7 +556,7 @@ section {
   transition: 0.3s;
 }
 
-.info .content .icon-box h4 a:hover {
+.info .content .icon-box h4:hover {
   color: #fdc134;
 }
 
@@ -617,6 +593,16 @@ section {
   {
     text-align: center;
     padding-top: 20px;
+  }
+
+  .info .content p {
+
+    color: #000000;
+    font-family:'Times New Roman';
+    font-size: 17px;
+    margin-left: 20px;
+    line-height: 24px;
+    text-align: justify;
   }
 }
 
@@ -670,7 +656,7 @@ section {
   box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
 }
 
-.services .icon-box:hover h4 a {
+.services .icon-box:hover h4 {
   color: #fdc134;
 }
 
