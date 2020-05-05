@@ -421,20 +421,44 @@ color: #fdc139;
   font-family: "Poppins", sans-serif;
 }
 
-#hero .btn-get-started {
-  color: #ffff;
-  border-radius: 50px;
-  padding: 8px 12px 10px 12px;
-  border: 2px solid #213b52;
-  transition: all ease-in-out 0.3s;
-  display: inline-block;
-  background: #213b52;
-  font-weight: bold;
-  font-size: 14px;
+#hero h4 {
+  
+  height: 45px;
+  width: 145px;
+  text-align: center;
+  right: 20px;
+  top: 75px;
+  transform: rotate(-3.5deg);
+  background-color: rgba(20,63,108,.8);
+  color: #ffd71f!important;
+  font-size: 13px;
+  line-height: 35px;
+  font-weight: 700;
+  padding: 5px;
 }
 
-#hero .btn-get-started:hover {
-  background: transparent;
+
+#hero .btn-menu, #hero .btn-book {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 0 10px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  color: #fff;
+  border: 2px solid #eeece8;
+  background: #213b52;
+}
+
+
+#hero .btn-menu:hover, #hero .btn-book:hover {
+  background: #ffb03b;
   color: #fff;
 }
 
@@ -471,14 +495,6 @@ color: #fdc139;
 @media (max-width: 478px) {
   #hero .hero-img img {
     width: 70%;
-  }
-
-/* Espacio de visualiazión de los botones*/
-  #hero .btn-get-started
-  {
-    display: block;
-    padding: 8px 12px 10px 12px;
-    font-size: 12px;
   }
 }
 
