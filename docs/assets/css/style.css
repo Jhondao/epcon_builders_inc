@@ -20,6 +20,7 @@ a {
 a:hover {
   color: #fdd067;
   text-decoration: none;
+  font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,11 +66,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #009999;
 }
 
 #header .logo h1 {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0;
   padding: 10px 0;
   line-height: 1;
@@ -91,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 50px;
 }
 
 @media (max-width: 1366px) {
@@ -111,7 +112,20 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575px) {
   #header .logo h1 
   {
-  font-size: 15px;
+  font-size: 17px;
+  }
+}
+
+@media (max-width: 478px) {
+  #header .logo h1 
+  {
+  font-size: 14px;
+  }
+
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
   }
 }
 
@@ -370,8 +384,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
+  background: #009999;
+  background: linear-gradient(180deg, #213b52 0.2%, #009999 35%, #009999 100%);
+}
+
+#hero .col-lg-6 h1 img {
+  padding: 0;
+  margin: 0;
+  max-height: 80px;
 }
 
 #hero h1 {
@@ -384,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 i{
-color: #fdc134;
+color: #fdc139;
 }
 
 #hero p {
@@ -402,15 +422,15 @@ color: #fdc134;
 }
 
 #hero .btn-get-started {
-  color: #213b52;
+  color: #ffff;
   border-radius: 50px;
-  padding: 8px 35px 10px 35px;
-  border: 2px solid #fdc134;
+  padding: 8px 12px 10px 12px;
+  border: 2px solid #213b52;
   transition: all ease-in-out 0.3s;
   display: inline-block;
-  background: #fdc134;
+  background: #213b52;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 #hero .btn-get-started:hover {
@@ -423,7 +443,7 @@ color: #fdc134;
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -448,20 +468,18 @@ color: #fdc134;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 478px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 70%;
   }
 
 /* Espacio de visualiazión de los botones*/
   #hero .btn-get-started
   {
     display: block;
-    padding-top: 12px;
+    padding: 8px 12px 10px 12px;
     font-size: 12px;
   }
-
-  
 }
 
 /*--------------------------------------------------------------
@@ -530,6 +548,7 @@ section {
   color: #213b52;
 }
 
+
 .info .content p {
   color: #000000;
   font-family:'Times New Roman';
@@ -545,10 +564,11 @@ section {
 }
 
 .info .content .icon-box h4 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  margin: 4px 0 10px 50px;
   color: #213b52;
+  text-align: justify;
 }
 
 .info .content .icon-box h4 a {
@@ -611,8 +631,8 @@ section {
 --------------------------------------------------------------*/
 .services {
   padding-bottom: 40px;
-  background:#284864;
-  background: linear-gradient(180deg, #243341 0%, #243341 35%, #204564 100%);
+  background: #009999;
+  background: linear-gradient(180deg, #213b52 0.2%, #009999 35%, #009999 100%);
 }
 
 .services .icon-box {
@@ -647,7 +667,7 @@ section {
 .services .icon-box p {
   margin-left: 70px;
   line-height: 24px;
-  font-size: 17px;
+  font-size: 20px;
   color: #000000;
   font-family:'Times New Roman';
 }
@@ -660,6 +680,14 @@ section {
   color: #fdc134;
 }
 
+@media (max-width: 667px) {
+  .services .icon-box p {
+    margin-left: 70px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
 
 /*--------------------------------------------------------------
 # About
@@ -869,8 +897,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background:#284864;
-  background: linear-gradient(180deg, #243341 0%, #243341 10%, #204564 25%);
+  background: #009999;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -883,7 +910,8 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(26, 46, 64, 0.85);
+  background: #009999;
+  background: linear-gradient(180deg, #009999 0.2%, #213b52 95%, #213b52 100%);
   z-index: 1;
 }
 
@@ -1003,3 +1031,6 @@ section {
     text-align: ceneter;
   }
 }
+
+
+
