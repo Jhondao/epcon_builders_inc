@@ -437,23 +437,21 @@ color: #fdc139;
   color: #fff;
 }
 
-
-
 #hero .btn-menu, #hero .btn-book {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 22px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
   padding: 12px 30px;
-  border-radius: 50px;
+  border-radius: 15px;
   transition: 0.5s;
   line-height: 1;
   margin: 0 10px;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #eeece8;
+  border: 2px solid #fdc134;
   background: #213b52;
   font-weight: bold;
 }
@@ -498,15 +496,11 @@ color: #fdc139;
     width: 70%;
   }
 
-  #hero .btn-get-started {
-    width: 40%;
-    font-weight: bold;
-    font-size: 10px;
-    padding: 10px, 10px, 10px, 10px;
-  }
-
   #hero .btn-menu, #hero .btn-book {
-  font-size: 9px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px, 10px, 10px, 10px;
   }
 
   #hero h2
@@ -576,14 +570,22 @@ section {
 --------------------------------------------------------------*/
 .clients {
   padding: 0px 0;
+  background:linear-gradient(to right, rgba(255,255,255,0), rgb(10, 138, 138), rgba(255,255,255,0)), url(../img/phono2.jpg) center center no-repeat;
 }
+
+
+.clients::before
+{
+  background: #009999;
+}
+
 
 .clients .client-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 120px;
+  height: 70px;
 }
 
 .clients .client-logo img {
@@ -596,6 +598,26 @@ section {
 
 .clients img {
   transition: all 0.4s ease-in-out;
+}
+
+.clients a h2
+{
+  font-size: 40px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 478px)
+{
+  .clients 
+  {
+    height: 120px;
+  }
+  .clients a h2
+  {
+    font-size: 17px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -613,12 +635,10 @@ section {
 }
 .info .content p {
   color: #000000;
-  font-family:'Times New Roman';
   font-size: 17px;
   margin-left: 0px;
   line-height: 24px;
   text-align: justify;
-  font-weight: bold;
 }
 
 .info .content .icon-box {
@@ -652,6 +672,7 @@ section {
   font-size: 15px;
   color: #848484;
   margin-left: 60px;
+  font-weight: normal;
 }
 
 .info .image {
@@ -680,7 +701,6 @@ section {
   .info .content p {
 
     color: #000000;
-    font-family:'Times New Roman';
     font-size: 17px;
     margin-left: 20px;
     line-height: 24px;
@@ -731,7 +751,6 @@ section {
   line-height: 24px;
   font-size: 20px;
   color: #000000;
-  font-family:'Times New Roman';
 }
 
 .services .icon-box:hover {
@@ -842,7 +861,6 @@ section {
 .contact p
 {
   color: #000000;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
   font-weight: bold;
 }
