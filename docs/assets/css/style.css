@@ -395,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -508,13 +508,18 @@ color: #fdc139;
   #hero .btn-menu, #hero .btn-book {
   font-size: 9px;
   }
+
+  #hero h2
+  {
+    font-size:17px;
+  }
 }
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -563,20 +568,49 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
+
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding: 0px 0;
+}
+
+.clients .client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 120px;
+}
+
+.clients .client-logo img {
+  height: 90px;
+}
+
+.clients .client-logo:hover img {
+  transform: scale(1.2);
+}
+
+.clients img {
+  transition: all 0.4s ease-in-out;
+}
+
 /*--------------------------------------------------------------
 # Info
 --------------------------------------------------------------*/
 .info .content {
-  padding: 30px 0;
+  padding: 0px 0;
 }
 
 .info .content h3 {
   font-weight: 700;
   font-size: 34px;
   color: #213b52;
+  
 }
-
-
 .info .content p {
   color: #000000;
   font-family:'Times New Roman';
@@ -621,7 +655,7 @@ section {
 }
 
 .info .image {
-  background: url("../img/fondo_header3.png") center center no-repeat;
+  background: url("../img/fondo_header.png") center center no-repeat;
   background-size: cover;
   min-height: 400px;
   border-radius: 50px;
