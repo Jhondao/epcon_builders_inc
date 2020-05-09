@@ -710,6 +710,11 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.portafolio .portfolio-wrap img
+{
+  width: 100%;
+}
+
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fdc134;
 }
@@ -806,13 +811,33 @@ section {
 }
 
 
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+
+
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; 
+    } 
+  
+  }
+  
+  .carousel-multi-item-2 .card img {
+  border-radius: 2px;
+  }
+  
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 #intro {
   width: 100%;
   height: 70vh;
-  background: url(../img/epcon/10.JPG) top center;
+  background: url(../img/epcon/10.jpg) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
