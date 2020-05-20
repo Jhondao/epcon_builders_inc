@@ -1146,6 +1146,7 @@ section {
   font-weight: 700;
   margin: 4px 0 10px 50px;
   color: #213b52;
+  text-align: justify;
 }
 
 .about-video .content .icon-box h4 a {
